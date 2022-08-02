@@ -16,7 +16,7 @@ Please do ONE of the tasks assigned to you by the CTO:
 This task is about integrating virtual media item with transparent background into the tour.
 
 1. Place `video.mp4` that is in `/public` folder on one of the walls in the 3D Tour. Make sure it autoplays. When you place the video on one of the walls, you can use magic numbers and hardcoded values for the xyz position/rotation or any other setting. It doesn't need to be dynamic or have controllers.
-2. Remove the green background (green screen) from the video using ThreeJS masking. You can use extentions and addons to your liking. It is important it works good on Firefox and Chrome and that it has **transparent** background, so only the alpca is visible, not the green background.
+2. Remove the green background (green screen) from the video using ThreeJS masking. You can use extentions (like https://github.com/hawksley/Threex.chromakey) and addons to your liking. It is important it works good on Firefox and Chrome and that it has **transparent** background, so only the alpca is visible, not the green background.
 
 ## Task 2:
 
