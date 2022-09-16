@@ -24,7 +24,7 @@ const App = () => {
     <div className="App">
         <iframe 
             ref={ref}
-            src="/mp-sdk/3.1.63/showcase.html?m=gUr9K6pRUWt&applicationKey=295ba0c0f04541318359a8e75af33043&play=1"
+            src="/mp-sdk/3.1.63/showcase.html?applicationKey=wywq0cnqwhu6x2baz33k4u75c&m=bSubdPA5LXJ&play=1&search=0&title=0&brand=0&hl=0&tourcta=1&dh=1&mt=1&nozoom=0&pin=1&mls=0&qs=0&gt=1&portal=1&f=1&wh=1&kb=1&lp=0&vr=1&help=1&nt=0"
             frameBorder="0"
             allowFullScreen allow="vr">
         </iframe>

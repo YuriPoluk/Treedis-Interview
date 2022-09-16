@@ -25,6 +25,7 @@ This task is about integrating a webpage item into the tour.
 1. Import `public/website` folder as a webpage in an iFrame.
 2. Using ThreeJS and MP functions, integrate this iFrame on a wall inside the 3D Tour. Make sure the webpage is clickable and intertacable. It's important it will work on mobile devices and desktop on all major browsers (Firefox, Chrome, Safari). When you place the webpage on one of the walls, you can use magic numbers and hardcoded values for the xyz position/rotation or any other setting. It doesn't need to be dynamic or have controllers.
 
-## Task 3: TBD
+## Task 3:
+Place an mp4 video file within the scene (using ThreeJS and Matterport Bundle SDK). Make this video work on Oculus with autoplay on. You can use the video.mp4 file that is located inside `public` folder (reachable at localhost:3000/video.mp4) or from an external source (url).
 
 ## Task 4: TBD
