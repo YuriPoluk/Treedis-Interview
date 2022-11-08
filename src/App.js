@@ -1,25 +1,31 @@
-import './App.css';
-import React, { useRef, useEffect } from 'react';
+import './App.css'
+import React, { useRef, useEffect, useState } from 'react'
+import { ScreenComponentFactory } from './ScreenComponent'
 
 const App = () => {
-  const ref = useRef(null);
-  useEffect(() => {
+  const ref = useRef(null)
+
+  useEffect(() => { 
     const sdk = ref.current
-    const showcaseWindow = sdk.contentWindow;
+    const showcaseWindow = sdk.contentWindow
     sdk.addEventListener('load', async function() {
-      let sdk;
+      let sdk
       try {
-        sdk = await showcaseWindow.MP_SDK.connect(showcaseWindow);
+        sdk = await showcaseWindow.MP_SDK.connect(showcaseWindow)
+        sdk.Scene.register('screen', ScreenComponentFactory)
+
+        const [sceneObject] = await sdk.Scene.createObjects(1)
+        const node = sceneObject.addNode()
+        node.addComponent('screen')
+        node.start()
       }
       catch(e) {
-        console.error(e);
-        return;
+        console.error(e)
+        return
       }
-    });
+    })
+  }, [])
 
-    //TODO: add some more actions using sdk. E.g. sdk.Scene()...
-
-  }, []);
   return (
     <div className="App">
         <iframe 
@@ -29,7 +35,7 @@ const App = () => {
             allowFullScreen allow="vr">
         </iframe>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
